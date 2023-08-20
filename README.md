@@ -33,6 +33,9 @@ We begin the process by reading an RGB image along with its corresponding ground
 Note that the size of the confusion matrix was used to distinguish between a homogeneous region and a mixed region. If the size of a confusion matrix is (1, 1), it means that only one class has been detected, indicating that the region is considered homogeneous. Otherwise, if it has a size of (2, 2), then two classes have been detected, and the region is considered mixed.
 
 ### GAME THEORY PART
+**Extraction of homogeneous regions using thresholding** : This step involves detecting skin and non-skin regions in the input image by applying a simple thresholding technique to obtain the skin matrix and the non-skin matrix. These two matrices will be used in the subsequent part of this algorithm, specifically when applying game theory to mixed regions. The procedure we follow is as follows: for each region in our image, we confront the six color spaces mentioned earlier. Using their binary masks and the ground truth of the region, we calculate the confusion matrices and then examine their sizes. If the size of the confusion matrix for any of the color spaces is equal to (1, 1), the region is considered homogeneous.
+
+**Apply game theory to mixed regions** : 
 ## DATASET
 We worked with two databases from the [HGR](https://sun.aei.polsl.pl/~mkawulok/gestures/) series: HGR1 and HGR2A. These databases have been divided into training data (80%) and test data (20%).
 ## RESULTS
