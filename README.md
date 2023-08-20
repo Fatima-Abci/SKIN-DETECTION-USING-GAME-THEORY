@@ -54,11 +54,15 @@ After generating the two CSV files containing the regions and corresponding bina
 <p align="center"> 
 <img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/31e21ea3-045f-435c-ad14-ebc38f2525ce" alt="autoencoder" width="800" height="200">
 </p>
-
-The **encoder** part of the model allows for the extraction of the most important visual features from the input region.
+The encoder part of the model allows for the extraction of the most important visual features from the input region.
 <p align="center"> 
-<img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/31e21ea3-045f-435c-ad14-ebc38f2525ce" alt="encoder" width="800" height="200">
+<img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/b609907a-a90c-45a3-811a-d7f8d6bbbc9c" alt="encoder" width="800" height="200">
 </p>
+The decoder, on the other hand, enables the reconstruction of the region from its representation in latent space.
+<p align="center"> 
+<img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/b609907a-a90c-45a3-811a-d7f8d6bbbc9c" alt="decoder" width="800" height="200">
+</p>
+
 
 ## DATASET
 We worked with two databases from the [HGR](https://sun.aei.polsl.pl/~mkawulok/gestures/) series: HGR1 and HGR2A. These databases have been divided into training data (80%) and test data (20%).
