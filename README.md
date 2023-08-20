@@ -50,7 +50,7 @@ At the end of this first tournament, we calculate the gain for each player, name
 ### DEEP LEARNING PART
 After generating the two CSV files containing the regions and corresponding binary masks for the training data of the game theory part, we are entering the phase of deep learning for our algorithm. This step involves training a convolutional autoencoder for content-based image retrieval using the k-neighrest neighbor algorithm.
 
-**Training the autoencoder :** We start by trainning the autoencoder. The following diagram represents the architecture of the utilized convolutional autoencoder.
+**Training the autoencoder :** We start training the autoencoder with a dataset that has both skin and non-skin pixels. The following diagram represents the architecture of the utilized convolutional autoencoder.
 <p align="center"> 
 <img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/31e21ea3-045f-435c-ad14-ebc38f2525ce" alt="autoencoder" width="800" height="200">
 </p>
@@ -82,7 +82,6 @@ The table below presents the performance measurement values of our model.
 | HGR2A  | [0.99, 0.87]  | [0.99, 0.86]  | [0.99, 0.86]  | 0.98  | 0.14  |
 
 The results we have obtained for all the measures used demonstrate the robustness of our model for skin detection.
-
 ## RESSOURCES
 - https://www.researchgate.net/publication/340845355_Zero-sum_game_theory_model_for_segmenting_skin_regions
 - https://towardsdatascience.com/build-a-simple-image-retrieval-system-with-an-autoencoder-673a262b7921
