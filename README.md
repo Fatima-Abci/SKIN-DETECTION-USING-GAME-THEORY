@@ -48,12 +48,18 @@ Note that the size of the confusion matrix was used to distinguish between a hom
 At the end of this first tournament, we calculate the gain for each player, namely: HSV, YCRCB, and the new hybrid model, HSV-YCRCB. Next, we fill the payoff matrix, compute the Nash equilibrium within it, and then determine the winner. This winner will compete against another color space from the list of players, and this process will repeat until the list becomes empty, allowing us to iterate through all the color spaces. The corresponding mixed region and the binary mask of the winner will be saved in the two CSV files: "regions.csv" and "masks.csv," respectively."
 
 ### DEEP LEARNING PART
-After generating the two CSV files containing the regions and corresponding binary masks for the training data of the game theory part, we are entering the phase of deep learning for our algorithm. This step involves training a convolutional autoencoder for content-based image retrieval. The following diagram represents the architecture of the utilized convolutional autoencoder.
+After generating the two CSV files containing the regions and corresponding binary masks for the training data of the game theory part, we are entering the phase of deep learning for our algorithm. This step involves training a convolutional autoencoder for content-based image retrieval.
+
+**Training the autoencoder :** We start by trainning the autoencoder. The following diagram represents the architecture of the utilized convolutional autoencoder.
 <p align="center"> 
-<img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/e4e28760-8fcd-45e3-84a8-f221fa0bc1da" alt="autoencoder" width="700" height="400">
+<img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/31e21ea3-045f-435c-ad14-ebc38f2525ce" alt="autoencoder" width="800" height="200">
 </p>
 
-**Training the autoencoder :**  
+The **encoder** part of the model allows for the extraction of the most important visual features from the input region.
+<p align="center"> 
+<img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/31e21ea3-045f-435c-ad14-ebc38f2525ce" alt="encoder" width="800" height="200">
+</p>
+
 ## DATASET
 We worked with two databases from the [HGR](https://sun.aei.polsl.pl/~mkawulok/gestures/) series: HGR1 and HGR2A. These databases have been divided into training data (80%) and test data (20%).
 ## RESULTS
