@@ -43,8 +43,9 @@ Note that the size of the confusion matrix was used to distinguish between a hom
 
 - The **"collaborate"** strategy, on the other hand, allows the two players to work together to process the current region by combining their color components, leading to the creation of a new hybrid player. The processing of the mixed region in this case proceeds in the same way as the "do not collaborate" strategy, which involves calculating the Mahalanobis distance per pixel.
 <p align="center"> 
-<img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/19804019-ced7-462d-88ba-ff73b31ea078" alt="collaborate strategy" width="800" height="400">
+<img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/e4e28760-8fcd-45e3-84a8-f221fa0bc1da" alt="collaborate strategy" width="700" height="400">
 </p>
+At the end of this first tournament, we calculate the gain for each player, which in our case are: HSV, YCRCB, as well as the new hybrid model HSV-YCRCB. Next, we fill the payoff matrix, compute the Nash equilibrium on it, and then select the winner. This winner will be confronted with another color space from the list of players, and this process will repeat until this list becomes empty, allowing us to go through all the color spaces. The corresponding mixed region and the binary mask of the winner will be saved in the two CSV files: "regions.csv" and "masks.csv," respectively.
 
 ## DATASET
 We worked with two databases from the [HGR](https://sun.aei.polsl.pl/~mkawulok/gestures/) series: HGR1 and HGR2A. These databases have been divided into training data (80%) and test data (20%).
