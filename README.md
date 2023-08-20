@@ -45,7 +45,7 @@ Note that the size of the confusion matrix was used to distinguish between a hom
 <p align="center"> 
 <img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/e4e28760-8fcd-45e3-84a8-f221fa0bc1da" alt="collaborate strategy" width="700" height="400">
 </p>
-At the end of this first tournament, we calculate the gain for each player, which in our case are: HSV, YCRCB, as well as the new hybrid model HSV-YCRCB. Next, we fill the payoff matrix, compute the Nash equilibrium on it, and then select the winner. This winner will be confronted with another color space from the list of players, and this process will repeat until this list becomes empty, allowing us to go through all the color spaces. The corresponding mixed region and the binary mask of the winner will be saved in the two CSV files: "regions.csv" and "masks.csv," respectively.
+At the end of this first tournament, we calculate the gain for each player, namely: HSV, YCRCB, and the new hybrid model, HSV-YCRCB. Next, we fill the payoff matrix, compute the Nash equilibrium within it, and then determine the winner. This winner will compete against another color space from the list of players, and this process will repeat until the list becomes empty, allowing us to iterate through all the color spaces. The corresponding mixed region and the binary mask of the winner will be saved in the two CSV files: "regions.csv" and "masks.csv," respectively."
 
 ## DATASET
 We worked with two databases from the [HGR](https://sun.aei.polsl.pl/~mkawulok/gestures/) series: HGR1 and HGR2A. These databases have been divided into training data (80%) and test data (20%).
