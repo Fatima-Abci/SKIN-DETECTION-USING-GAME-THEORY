@@ -69,6 +69,13 @@ The training of the autoencoder allows for learning the most relevant representa
 ## DATASET
 We worked with two databases from the [HGR](https://sun.aei.polsl.pl/~mkawulok/gestures/) series: HGR1 and HGR2A. These databases have been divided into training data (80%) and test data (20%).
 ## RESULTS
+| Dataset      | Precision      | Recall      | F1-score      | Accuracy      | False positive      |
+|---------------|---------------|---------------|---------------|---------------|---------------|
+| HGR1  | Row 1, Col 2  | Row 1, Col 3  | Row 1, Col 4  | Row 1, Col 5  | Row 1, Col 5  |
+| HGR2A  | Row 2, Col 2  | Row 2, Col 3  | Row 2, Col 4  | Row 2, Col 5  | Row 2, Col 5  |
+
+The results we have obtained for all the measures used demonstrate the robustness of our model for skin detection.
+
 ## RESSOURCES
 - https://www.researchgate.net/publication/340845355_Zero-sum_game_theory_model_for_segmenting_skin_regions
 - https://towardsdatascience.com/build-a-simple-image-retrieval-system-with-an-autoencoder-673a262b7921
