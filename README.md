@@ -17,5 +17,5 @@ We'll begin by presenting the preprocessing steps applied to the input image, an
 ### PREPROCESSING
 We begin the process by reading an RGB image along with its corresponding ground truth. This ground truth image will be used to calculate the gain for each player. After this, we apply a median filter with dimensions of (5, 5) to the input image for noise reduction. It's important to mention that the input image is divided into smaller regions, each with dimensions of (16, 16, 3). This division allows us to treat our image per region rather than as a whole, aiming to achieve superior results as each region possesses its own characteristics.
 <p align="center"> 
-<img src="Image URL" alt="Alt Text">
+<img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/b6116eb1-6297-4865-a698-4e606da478f6" alt="devide image" width="200" height="200">
 </p>
