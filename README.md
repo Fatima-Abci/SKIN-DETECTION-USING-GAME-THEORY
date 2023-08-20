@@ -1,5 +1,7 @@
 # SKIN-DETECTION-USING-GAME-THEORY
 This is my master's degree final project under the supervision of **Ms. Dahmani Djamila** and **Mr. Sahnoun Abdelkarim**.
+![GitHub stars](https://img.shields.io/github/stars/username/repo.svg?style=social&label=Stars)
+
 ## TABLE OF CONTENTS
 - [OVERVIEW](#overview)
 - [DESCRIPTION](#description)
