@@ -83,5 +83,5 @@ The table below presents the performance measurement values of our model.
 
 The results we have obtained for all the measures used demonstrate the robustness of our model for skin detection.
 ## RESSOURCES
-- [Zero sum_game theory model for segmenting skin regions](https://www.researchgate.net/publication/340845355_Zero-sum_game_theory_model_for_segmenting_skin_regions)
+- [Zero sum game theory model for segmenting skin regions](https://www.researchgate.net/publication/340845355_Zero-sum_game_theory_model_for_segmenting_skin_regions)
 - [build a simple image retrieval system with an autoencoder](https://towardsdatascience.com/build-a-simple-image-retrieval-system-with-an-autoencoder-673a262b7921)
