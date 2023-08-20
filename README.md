@@ -19,3 +19,14 @@ We begin the process by reading an RGB image along with its corresponding ground
 <p align="center"> 
 <img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/b6116eb1-6297-4865-a698-4e606da478f6" alt="devide image" width="200" height="200">
 </p>
+
+### KEY CONCEPTS
+**Homogeneous region :** A homogeneous region is defined as a region composed exclusively of skin pixels or non-skin pixels. In other words, all the pixels present in this region are either skin pixels or something other than skin.
+<p align="center"> 
+<img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/b6116eb1-6297-4865-a698-4e606da478f6" alt="homogeneous region" width="200" height="200">
+</p>
+
+**Mixed region :** A mixed region is a region that contains both skin and non-skin pixels.
+<p align="center"> 
+<img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/b6116eb1-6297-4865-a698-4e606da478f6" alt="mixed region" width="200" height="200">
+</p>
