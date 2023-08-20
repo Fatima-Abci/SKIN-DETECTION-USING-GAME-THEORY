@@ -36,7 +36,6 @@ Note that the size of the confusion matrix was used to distinguish between a hom
 ## DATASET
 We worked with two databases from the [HGR](https://sun.aei.polsl.pl/~mkawulok/gestures/) series: HGR1 and HGR2A. These databases have been divided into training data (80%) and test data (20%).
 ## RESULTS
-
 ## RESSOURCES
 - https://www.researchgate.net/publication/340845355_Zero-sum_game_theory_model_for_segmenting_skin_regions
 - https://towardsdatascience.com/build-a-simple-image-retrieval-system-with-an-autoencoder-673a262b7921
