@@ -69,6 +69,13 @@ The training of the autoencoder allows for learning the most relevant representa
 ## DATASET
 We worked with two databases from the [HGR](https://sun.aei.polsl.pl/~mkawulok/gestures/) series: HGR1 and HGR2A. These databases have been divided into training data (80%) and test data (20%).
 ## RESULTS
+The images below showcase selected images from the HGR1 and HGR2A test databases, along with their binary masks obtained by our skin detection model.
+<p align="center"> 
+<img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/12e8d89b-5d15-4d0c-87e3-1bb770b955c7" alt="result" width="600" height="250">
+</p>
+
+The table below presents the performance measurement values of our model.
+
 | Dataset      | Precision      | Recall      | F1-score      | Accuracy      | False positive      |
 |---------------|---------------|---------------|---------------|---------------|---------------|
 | HGR1  | [0.98, 0.95]  | [0.98, 0.95]  | [0.98, 0.95]  | 0.97  | 0.05  |
