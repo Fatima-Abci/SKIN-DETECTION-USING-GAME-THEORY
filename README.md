@@ -60,7 +60,7 @@ The encoder part of the model allows for the extraction of the most important vi
 </p>
 The decoder, on the other hand, enables the reconstruction of the region from its representation in latent space.
 <p align="center"> 
-<img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/b609907a-a90c-45a3-811a-d7f8d6bbbc9c" alt="decoder" width="800" height="200">
+<img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/399a6b63-34f9-4abe-922c-77bbf42c3530" alt="decoder" width="800" height="200">
 </p>
 
 
