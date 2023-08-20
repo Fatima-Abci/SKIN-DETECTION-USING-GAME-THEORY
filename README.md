@@ -38,7 +38,7 @@ Note that the size of the confusion matrix was used to distinguish between a hom
 **Apply game theory to mixed regions** : These regions were detected in the same way as the homogeneous regions, with the only difference being that the mixed region is an area where the confusion matrix size for all the color spaces used is equal to (2, 2). Now, let's proceed to explain the logic of the game. Initially, we have a list containing the six players we mentioned earlier. These players will compete in a two-by-two elimination-based tournament within each mixed region of our image. The game begins between the two color spaces: HSV and YCRCB. Each player has a choice between two strategies: "collaborate" or "not collaborate". 
 - The **"not collaborate"** strategy allows a player to individually process the current region of the image. The processing involves calculating, for each pixel in a mixed region, its Mahalanobis distance with respect to the skin and non-skin data matrices. This results in two distances, which are then compared to classify the pixel as belonging to the skin class (0) or non-skin class (255).
 <p align="center"> 
-<img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/5af8265b-3c90-463f-8ff3-648048b96f7e" alt="not collaborate strategy" width="600" height="200">
+<img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/19804019-ced7-462d-88ba-ff73b31ea078" alt="not collaborate strategy" width="800" height="400">
 </p>
 
 ## DATASET
