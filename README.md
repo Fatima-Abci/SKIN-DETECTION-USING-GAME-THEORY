@@ -64,8 +64,7 @@ The decoder, on the other hand, enables the reconstruction of the region from it
 </p>
 The training of the autoencoder allows for learning the most relevant representations of a given region of an image. It is essential to underline that our study focuses only on the encoder part of this model.
 
-**Calculating similarity using the KNN algorithm**
-Once the autoencoder has been trained and evaluated, we utilize the encoder component to obtain latent space representations of each region in the training dataset (regions.csv). These latent space representations are then used to train the k-nearest neighbors model. The logic of the final algorithm is as follows: for an input image, we divide it into fixed-size blocks (16, 16, 3) and process them individually. For each region, we generate its latent space and compute its similarity with the latent spaces of regions from the training dataset. By setting the parameter k to 1, we select the region that is most similar to it and apply its binary mask to it.
+**Calculating similarity using the KNN algorithm :** Once the autoencoder has been trained and evaluated, we utilize the encoder component to obtain latent space representations of each region in the training dataset (regions.csv). These latent space representations are then used to train the k-nearest neighbors model. The logic of the final algorithm is as follows: for an input image, we divide it into fixed-size blocks (16, 16, 3) and process them individually. For each region, we generate its latent space and compute its similarity with the latent spaces of regions from the training dataset. By setting the parameter k to 1, we select the region that is most similar to it and apply its binary mask to it.
 
 ## DATASET
 We worked with two databases from the [HGR](https://sun.aei.polsl.pl/~mkawulok/gestures/) series: HGR1 and HGR2A. These databases have been divided into training data (80%) and test data (20%).
