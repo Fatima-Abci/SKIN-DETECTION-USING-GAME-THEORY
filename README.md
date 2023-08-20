@@ -30,5 +30,8 @@ We begin the process by reading an RGB image along with its corresponding ground
 <p align="center"> 
 <img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/6d11b7dd-505a-4f89-80f3-81a349bcc4e5" alt="mixed region" width="300" height="200">
 </p>
+Note that the size of the confusion matrix was used to distinguish between a homogeneous region and a mixed region. If the size of a confusion matrix is (1, 1), it means that only one class has been detected, indicating that the region is considered homogeneous. Otherwise, if it has a size of (2, 2), then two classes have been detected, and the region is considered mixed.
 
 ### GAME THEORY PART
+## DATASET
+We worked with two databases from the [HGR](https://sun.aei.polsl.pl/~mkawulok/gestures/) series: HGR1 and HGR2A. These databases have been divided into training data (80%) and test data (20%).
