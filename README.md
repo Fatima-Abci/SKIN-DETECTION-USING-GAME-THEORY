@@ -41,6 +41,11 @@ Note that the size of the confusion matrix was used to distinguish between a hom
 <img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/19804019-ced7-462d-88ba-ff73b31ea078" alt="not collaborate strategy" width="800" height="400">
 </p>
 
+- The **"collaborate"** strategy, on the other hand, allows the two players to work together to process the current region by combining their color components, leading to the creation of a new hybrid player. The processing of the mixed region in this case proceeds in the same way as the "do not collaborate" strategy, which involves calculating the Mahalanobis distance per pixel.
+<p align="center"> 
+<img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/19804019-ced7-462d-88ba-ff73b31ea078" alt="collaborate strategy" width="800" height="400">
+</p>
+
 ## DATASET
 We worked with two databases from the [HGR](https://sun.aei.polsl.pl/~mkawulok/gestures/) series: HGR1 and HGR2A. These databases have been divided into training data (80%) and test data (20%).
 ## RESULTS
