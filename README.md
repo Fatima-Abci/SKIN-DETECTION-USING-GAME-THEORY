@@ -71,8 +71,8 @@ We worked with two databases from the [HGR](https://sun.aei.polsl.pl/~mkawulok/g
 ## RESULTS
 | Dataset      | Precision      | Recall      | F1-score      | Accuracy      | False positive      |
 |---------------|---------------|---------------|---------------|---------------|---------------|
-| HGR1  | Row 1, Col 2  | Row 1, Col 3  | Row 1, Col 4  | Row 1, Col 5  | Row 1, Col 5  |
-| HGR2A  | Row 2, Col 2  | Row 2, Col 3  | Row 2, Col 4  | Row 2, Col 5  | Row 2, Col 5  |
+| HGR1  | [0.98, 0.95]  | [0.98, 0.95]  | [0.98, 0.95]  | 0.97  | 0.05  |
+| HGR2A  | [0.99, 0.87]  | [0.99, 0.86]  | [0.99, 0.86]  | 0.98  | 0.14  |
 
 The results we have obtained for all the measures used demonstrate the robustness of our model for skin detection.
 
