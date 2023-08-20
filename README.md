@@ -35,7 +35,12 @@ Note that the size of the confusion matrix was used to distinguish between a hom
 ### GAME THEORY PART
 **Extraction of homogeneous regions using thresholding** : This step involves detecting skin and non-skin regions in the input image by applying a simple thresholding technique to obtain the skin matrix and the non-skin matrix. These two matrices will be used in the subsequent part of this algorithm, specifically when applying game theory to mixed regions. The procedure we follow is as follows: for each region in our image, we compare the six color spaces mentioned earlier. Using their binary masks and the ground truth of the region, we calculate the confusion matrices and then check their sizes. If the size of the confusion matrix for one of the color spaces is equal to (1, 1), then the region is considered homogeneous. The pixels of homogeneous skin-type regions are stored in the skin matrix, while those of non-skin types are stored in the non-skin matrix. Furthermore, these homogeneous regions, each of size (16, 16, 3), will be saved along with their binary masks in two CSV files named "regions.csv" and "masks.csv," respectively. The purpose of these CSV files will be explained later in the section dedicated to deep learning.
 
-**Apply game theory to mixed regions** : 
+**Apply game theory to mixed regions** : These regions were detected in the same way as the homogeneous regions, with the only difference being that the mixed region is an area where the confusion matrix size for all the color spaces used is equal to (2, 2). Now, let's proceed to explain the logic of the game. Initially, we have a list containing the six players we mentioned earlier. These players will compete in a two-by-two elimination-based tournament within each mixed region of our image. The game begins between the two color spaces: HSV and YCRCB. Each player has a choice between two strategies: "collaborate" or "not collaborate". 
+- The **"not collaborate"** strategy allows a player to individually process the current region of the image. The processing involves calculating, for each pixel in a mixed region, its Mahalanobis distance with respect to the skin and non-skin data matrices. This results in two distances, which are then compared to classify the pixel as belonging to the skin class (0) or non-skin class (255).
+<p align="center"> 
+<img src="https://github.com/FatimaAbc/SKIN-DETECTION-USING-GAME-THEORY/assets/66517563/5af8265b-3c90-463f-8ff3-648048b96f7e" alt="not collaborate strategy" width="600" height="200">
+</p>
+
 ## DATASET
 We worked with two databases from the [HGR](https://sun.aei.polsl.pl/~mkawulok/gestures/) series: HGR1 and HGR2A. These databases have been divided into training data (80%) and test data (20%).
 ## RESULTS
