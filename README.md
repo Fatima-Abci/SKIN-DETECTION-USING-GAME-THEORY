@@ -48,7 +48,7 @@ Note that the size of the confusion matrix was used to distinguish between a hom
 At the end of this first tournament, we calculate the gain for each player, namely: HSV, YCRCB, and the new hybrid model, HSV-YCRCB. Next, we fill the payoff matrix, compute the Nash equilibrium within it, and then determine the winner. This winner will compete against another color space from the list of players, and this process will repeat until the list becomes empty, allowing us to iterate through all the color spaces. The corresponding mixed region and the binary mask of the winner will be saved in the two CSV files: "regions.csv" and "masks.csv," respectively."
 
 ### DEEP LEARNING PART
-After generating the two CSV files containing the regions and corresponding binary masks for the training data of the game theory part, we are entering the phase of deep learning for our algorithm. This step involves training a convolutional autoencoder for content-based image retrieval.
+After generating the two CSV files containing the regions and corresponding binary masks for the training data of the game theory part, we are entering the phase of deep learning for our algorithm. This step involves training a convolutional autoencoder for content-based image retrieval using the k-neighrest neighbor algorithm.
 
 **Training the autoencoder :** We start by trainning the autoencoder. The following diagram represents the architecture of the utilized convolutional autoencoder.
 <p align="center"> 
