@@ -9,7 +9,7 @@ This is my master's degree final project under the supervision of **Ms. Dahmani 
   - [DEEP LEARNING PART](#deep-learning-part)
 - [DATASET](#dataset)
 - [RESULTS](#results)
-- [RESSOURCES](#ressources)
+- [RESOURCES](#resources)
 ## OVERVIEW
 In this project, we have developed a skin detection model utilizing game theory. We have taken into account six color spaces as players in the game, namely HSV, YCRCB, LAB, CMYK, RGB, and LUV. Each player has the option to choose between two strategies: "collaborate" and "not collaborate." The gain of each player is represented by the F1-score metric.
 ## DESCRIPTION
@@ -82,6 +82,6 @@ The table below presents the performance measurement values of our model.
 | HGR2A  | [0.99, 0.87]  | [0.99, 0.86]  | [0.99, 0.86]  | 0.98  | 0.14  |
 
 The results we have obtained for all the measures used demonstrate the robustness of our model for skin detection.
-## RESSOURCES
+## RESOURCES
 - [Zero sum game theory model for segmenting skin regions](https://www.researchgate.net/publication/340845355_Zero-sum_game_theory_model_for_segmenting_skin_regions)
 - [build a simple image retrieval system with an autoencoder](https://towardsdatascience.com/build-a-simple-image-retrieval-system-with-an-autoencoder-673a262b7921)
